@@ -5,6 +5,8 @@
 *{
   margin: 0%;
   padding: 0%;
+  font: var(--font);
+
 }
 body{
   width: 100%;
@@ -17,6 +19,7 @@ header{
   justify-content:center;
   align-items: center;
   text-align: justify;
+  background-color: var(--cor-azul);
 }
 .cabecalho{
   width: 100%;
@@ -29,64 +32,65 @@ header{
  font: var(--font);
  color:white;
 }
+#brasao{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 a{
-  margin: 1em;
   text-decoration: none;
   color: white;
   font: var(--font);
 
 }
-#divContInterno{
-  position:absolute;
+#divVoltar{
+  position: absolute;
   right: 10%;
   font-size: 25px;
 }
-
-h2{
-  color: black;
+#idSite{
+  position: relative;
+  left: 18%;
 }
 article{
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-#divAplicarMultas, #divVerMultas{
+#fieldsetCad{
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 100px;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
 }
-footer{
-  position: absolute;
-  bottom: 0;
-  background-color: var(--cor-azul);
-  width: 100%;
-  height:8em;
-  color: rgb(0, 0, 0);
-  margin: 0;
-
-
+fieldset{
+  padding: 5% 10% 5% 10%;
+  margin: 5%;
 }
-address{
-  color: white;
+input, select{
+  height: 1.5em;
+  width: 20em;
+  margin: 3% 0 3% 0;
+}
+input[value]{
+  color: gray;
+  padding-left: 2%;
+}
+button{
+  width: 20.5em;
+  height: 2em;
   font: var(--font);
-  font-size: 15px;
-  position: absolute;
-  bottom: 0.5em;
-}
-#address{
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: green;
+  border: 0;
+  box-sizing: content-box;
+  color: white;
+  margin-top: 3%;
 }
-#links{
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: center;
-  text-align: end;
-  margin-left: 1em;
-  font: var(--font)
+#calcular{
+  background-color: var(--cor-azul);
 }

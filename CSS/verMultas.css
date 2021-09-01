@@ -1,0 +1,45 @@
+:root{
+  --cor-azul:rgb(21, 21, 145); 
+  --font: normal 20px 'Open Sans Condensed', sans-serif;
+}
+
+#fieldsetForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+fieldset{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
+  text-align: center;
+  border: 0;
+}
+label{
+  font: var(--font)
+}
+input{
+  width: 23em;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-sizing: content-box;
+}
+
+#divPlaca, #divCNH{
+  margin-bottom: 2em;
+} 
+button{
+  width: 23em;
+  height: 2em;
+  margin-bottom: 2em;
+  background-color: green;
+  border: 0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+  
+}

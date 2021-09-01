@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/aplicarMultas2.css">
+  <link rel="stylesheet" href="/CSS/footerEHeader.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <title>Aplicar Multas</title>
+</head>
+<body>
+  <header>
+    <div class="cabecalho">
+
+      <div id="brasao" >
+        <img src="/IMAGENS/Bandeira_de_Pau_dos_Ferros_(RN).png" style="width:150px"> 
+        <h3 >Prefeitura de Pau dos Ferros</h3>
+      </div>
+
+      <div id="idSite">
+        <h3> Aplicar Multas</h3>
+      </div>
+      <div id="divVoltar">
+        <a id="Voltar" href="/HTML/index.html">Voltar</a> 
+      </div>        
+    </div>
+  </header>
+
+  <article>
+    
+      <fieldset id="fieldsetCad">
+        <legend>Cadastro de Multas</legend>
+
+        <form id="formCad ">
+          <label for="placa">Número da Placa</label><br/>
+          <input type="text" id="placa"><br/>
+
+          <label for="modelo">Modelo do Veículo</label><br/>
+          <input type="text" id="modelo"><br/>
+
+          <label for="numcnh">Número da Carteira de Motorista</label><br/>
+          <input type="number" id="numcnh"><br/>
+          
+          <label for="nome">Nome Completo</label><br/>
+          <input type="text" id="nome"><br/>
+
+          <label for="tipoMulta">Tipo de Multa</label><br/>
+          <select id="tipoMulta" >
+            <option value="R$0,00" id="zero" class="tipoDeMulta" ></option>
+            <option value="R$88,38" id="Leve" class="tipoDeMulta">Leve</option>
+            <option value="R$130,16" id="Media" class="tipoDeMulta">Media</option>
+            <option value="R$195,23" id="Grave" class="tipoDeMulta">Grave</option>
+            <option value="R$293,47" id="Gravissima" class="tipoDeMulta">Gravíssima</option>
+
+          </select><br/>
+
+          <label for="valorMulta">Valor da Multa</label> <br/>
+          <input id="valorMulta" readonly value="R$0,00" type="text"> <br/>
+
+          <label for="pontosNaCNH">Pontos na Carteira</label> <br/>
+          <input id="pontosNaCNH" readonly value="0" type="number"> <br/>
+          <button id="aplicar">Aplicar</button>
+        </form>
+
+      </fieldset>
+
+
+  </article>
+
+  <footer>
+    <div id="links">
+      <a href="https://www.paudosferros.rn.gov.br/" target="_blank" class="rodape">Prefeitura</a>
+      <a href="https://github.com/fabiana-marina/sistema-de-multas" class="rodape">GitHub</a>
+      <a href="https://www.linkedin.com/in/fabiana-almeida-4832b61b4/" class="rodape">Linkedin</a>
+      <a href="/HTML/contato.html" class="rodape">Contato</a>
+    </div>
+    <div id="address">
+   <br/> <address id="address1">
+      desenvolvido por: Fabiana Almeida
+    </address>
+    </div>
+  </footer>
+  <script >
+    document.getElementById("tipoMulta").onchange = function () {valorMulta()}
+  function valorMulta(){
+    var tipo = document.getElementById("tipoMulta");
+    var opcao = document.getElementById("tipoMulta").value;
+    var valor = document.getElementById('valorMulta');
+    var pontos = document.getElementById('pontosNaCNH');
+    valor.value = opcao;
+    console.log(opcao);
+    console.log(pontos.value)
+    if (opcao =="R$0,00" ){
+      pontos.value = 0;
+    }else
+    if(opcao == "R$88,38"){
+      pontos.value = 3;
+    } else
+    if(opcao == "R$130,16"){
+      pontos.value = 4;
+    } else
+    if(opcao == "R$195,23"){
+      pontos.value = 5;
+    } else{
+      pontos.value = 7;
+    }
+  
+  
+  }
+  </script>
+</body>
+</html>

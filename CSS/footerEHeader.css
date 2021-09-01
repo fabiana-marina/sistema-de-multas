@@ -1,0 +1,88 @@
+:root{
+  --cor-azul:rgb(21, 21, 145); 
+  --font: normal 20px 'Open Sans Condensed', sans-serif;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  font: var(--font);
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  text-align: justify;
+  background-color: var(--cor-azul);
+}
+.brasao{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  font: var(--font);
+}
+.cabecalho{
+  width: 100%;
+  height: 20%;
+  background-color: var(--cor-azul);
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  font: var(--font);
+  color:white;
+  margin-right: 6%;
+}
+#title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -15%;
+}
+a{
+  margin: 1em;
+  text-decoration: none;
+  color: white;
+  font: var(--font);
+
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  background-color: var(--cor-azul);
+  width: 100%;
+  height:4em;
+  color: rgb(189, 179, 179);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+address{
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0.5em;
+}
+#address{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#links{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  text-align: end;
+  margin: 1em 0 2em 0;
+}

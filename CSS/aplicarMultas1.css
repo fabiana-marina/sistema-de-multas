@@ -1,0 +1,97 @@
+:root{
+  --cor-azul:rgb(21, 21, 145); 
+  --font: normal 20px 'Open Sans Condensed', sans-serif;
+}
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  text-align: justify;
+  background-color: var(--cor-azul);
+}
+.brasao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.cabecalho{
+  width: 100%;
+  height: 20%;
+  background-color: var(--cor-azul);
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  font: var(--font);
+  color:white;
+  margin-right: 6%;
+}
+#idSite{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -16%;
+}
+a{
+  margin: 1em;
+  text-decoration: none;
+  color: white;
+  font: var(--font);
+}
+#recuperar{
+  
+  color: gray;
+  font-size: 15px;
+}
+fieldset{
+  width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  font: var(--font)
+
+}
+button{
+  width: 11em;
+  height: 2em;
+  margin-top: 1em;
+  font:var(--font);
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  cursor: pointer;
+
+}
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25em;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  font: var(--font)
+}
+input{
+  height: 2em;
+  width: 15em;
+  margin-top: 1em;
+  padding: 2%;
+}

@@ -1,0 +1,27 @@
+:root{
+  --cor-azul:rgb(21, 21, 145); 
+  --font: normal 20px 'Open Sans Condensed', sans-serif;
+}
+#divContInterno{
+  position:absolute;
+  right: 10%;
+  font-size: 25px;
+}
+
+h2{
+  color: black;
+}
+article{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#divAplicarMultas, #divVerMultas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px;
+}
